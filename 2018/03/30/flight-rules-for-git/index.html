@@ -44,6 +44,38 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="https://use.typekit.net/bol4szu.js/css?family=source-han-sans-simplified-c:300,300italic,400,400italic,700,700italic|source-code-pro:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
@@ -442,7 +474,7 @@
 <h3 id="我想删除我的的最后一次提交-commit"><a href="#我想删除我的的最后一次提交-commit" class="headerlink" title="我想删除我的的最后一次提交(commit)"></a>我想删除我的的最后一次提交(commit)</h3><p>如果你需要删除推了的提交(pushed commits)，你可以使用下面的方法。可是，这会不可逆的改变你的历史，也会搞乱那些已经从该仓库拉取(pulled)了的人的历史。简而言之，如果你不是很确定，千万不要这么做。</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset HEAD^ --hard</span><br><span class="line">$ git push -f [remote] [branch]</span><br></pre></td></tr></table></figure>
 <p>如果你还没有推到远程, 把Git重置(reset)到你最后一次提交前的状态就可以了(同时保存暂存的变化):</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(my-branch*)$ git reset --soft HEAD@&#123;1&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">my</span>-branch*)$ git <span class="keyword">reset</span> --soft HEAD@&#123;1&#125;</span><br></pre></td></tr></table></figure>
 <p>这只能在没有推送之前有用. 如果你已经推了, 唯一安全能做的是 <code>git revert SHAofBadCommit</code>， 那会创建一个新的提交(commit)用于撤消前一个提交的所有变化(changes)； 或者, 如果你推的这个分支是rebase-safe的 (例如： 其它开发者不会从这个分支拉), 只需要使用 <code>git push -f</code>； 更多, 请参考 <a href="#deleteremove-last-pushed-commit">the above section</a>。</p>
 <p><a name="⌫-any-commit"></a></p>
 <h3 id="删除任意提交-commit"><a href="#删除任意提交-commit" class="headerlink" title="删除任意提交(commit)"></a>删除任意提交(commit)</h3><p>同样的警告：不到万不得已的时候不要这么做.</p>
@@ -553,7 +585,7 @@
 <p>现在我们切回到主(master)分支，‘不小心的’删除<code>my-branch</code>分支</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(my-branch)$ git checkout master</span><br><span class="line">Switched to branch <span class="string">'master'</span></span><br><span class="line">Your branch is up-to-date with <span class="string">'origin/master'</span>.</span><br><span class="line">(master)$ git branch -D my-branch</span><br><span class="line">Deleted branch my-branch (was 4e3cd85).</span><br><span class="line">(master)$ <span class="built_in">echo</span> oh noes, deleted my branch!</span><br><span class="line">oh noes, deleted my branch!</span><br></pre></td></tr></table></figure>
 <p>在这时候你应该想起了<code>reflog</code>, 一个升级版的日志，它存储了仓库(repo)里面所有动作的历史。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(master)$ git reflog</span><br><span class="line">69204cd HEAD@&#123;0&#125;: checkout: moving from my-branch to master</span><br><span class="line">4e3cd85 HEAD@&#123;1&#125;: commit: foo.txt added</span><br><span class="line">69204cd HEAD@&#123;2&#125;: checkout: moving from master to my-branch</span><br></pre></td></tr></table></figure>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="literal">master</span>)$ git reflog</span><br><span class="line"><span class="number">69204</span>cd HEAD@&#123;<span class="number">0</span>&#125;: checkout: moving from my-branch to <span class="literal">master</span></span><br><span class="line"><span class="number">4</span>e3cd85 HEAD@&#123;<span class="number">1</span>&#125;: commit: foo.txt added</span><br><span class="line"><span class="number">69204</span>cd HEAD@&#123;<span class="number">2</span>&#125;: checkout: moving from <span class="keyword">master</span> <span class="title">to</span> my-branch</span><br></pre></td></tr></table></figure>
 <p>正如你所见，我们有一个来自删除分支的提交hash(commit hash)，接下来看看是否能恢复删除了的分支。</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(master)$ git checkout -b my-branch-help</span><br><span class="line">Switched to a new branch <span class="string">'my-branch-help'</span></span><br><span class="line">(my-branch-help)$ git reset --hard 4e3cd85</span><br><span class="line">HEAD is now at 4e3cd85 foo.txt added</span><br><span class="line">(my-branch-help)$ ls</span><br><span class="line">README.md foo.txt</span><br></pre></td></tr></table></figure>
 <p>看! 我们把删除的文件找回来了。 Git的 <code>reflog</code> 在rebasing出错的时候也是同样有用的。</p>
@@ -610,7 +642,7 @@
 <p>这会告诉你在一个分支里有而另一个分支没有的所有提交(commit), 和分支之间不共享的提交(commit)的列表。 另一个做法可以是:</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(master)$ git <span class="built_in">log</span> master ^feature/120-on-scroll --𐄂-merges</span><br></pre></td></tr></table></figure>
 <h3 id="交互式rebase-interactive-rebase-可能出现的问题"><a href="#交互式rebase-interactive-rebase-可能出现的问题" class="headerlink" title="交互式rebase(interactive rebase)可能出现的问题"></a>交互式rebase(interactive rebase)可能出现的问题</h3><p><a name="noop"></a></p>
-<h4 id="这个rebase-编辑屏幕出现’noop’"><a href="#这个rebase-编辑屏幕出现’noop’" class="headerlink" title="这个rebase 编辑屏幕出现’noop’"></a>这个rebase 编辑屏幕出现’noop’</h4><p>如果你看到的是这样:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">noop</span><br></pre></td></tr></table></figure></p>
+<h4 id="这个rebase-编辑屏幕出现’noop’"><a href="#这个rebase-编辑屏幕出现’noop’" class="headerlink" title="这个rebase 编辑屏幕出现’noop’"></a>这个rebase 编辑屏幕出现’noop’</h4><p>如果你看到的是这样:<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">noop</span></span><br></pre></td></tr></table></figure></p>
 <p>这意味着你rebase的分支和当前分支在同一个提交(commit)上, 或者 <em>领先(ahead)</em> 当前分支。 你可以尝试:</p>
 <ul>
 <li>检查确保主(master)分支没有问题</li>
