@@ -188,7 +188,7 @@ body {
   font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 20px;
   line-height: 2;
-  color: #555;
+  color: #324158;
   background: #fff;
 }
 @media (max-width: 767px) {
@@ -227,51 +227,51 @@ h6 {
   margin: 20px 0 15px;
 }
 h1 {
-  font-size: 28px;
+  font-size: 38px;
 }
 @media (max-width: 767px) {
   h1 {
-    font-size: 24px;
+    font-size: 34px;
   }
 }
 h2 {
-  font-size: 24px;
+  font-size: 34px;
 }
 @media (max-width: 767px) {
   h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 h3 {
-  font-size: 20px;
+  font-size: 30px;
 }
 @media (max-width: 767px) {
   h3 {
-    font-size: 16px;
+    font-size: 26px;
   }
 }
 h4 {
-  font-size: 16px;
+  font-size: 26px;
 }
 @media (max-width: 767px) {
   h4 {
-    font-size: 12px;
+    font-size: 22px;
   }
 }
 h5 {
-  font-size: 12px;
+  font-size: 22px;
 }
 @media (max-width: 767px) {
   h5 {
-    font-size: 8px;
+    font-size: 18px;
   }
 }
 h6 {
-  font-size: 8px;
+  font-size: 18px;
 }
 @media (max-width: 767px) {
   h6 {
-    font-size: 4px;
+    font-size: 14px;
   }
 }
 p {
@@ -1020,7 +1020,7 @@ pre .javascript .function {
   display: block;
   width: 22px;
   height: 2px;
-  background: #555;
+  background: #324158;
   border-radius: 1px;
 }
 .btn-bar+.btn-bar {
@@ -1887,7 +1887,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff6e;
+  background: #ff79ff;
 }
 .links-of-blogroll {
   font-size: 13px;
