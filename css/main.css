@@ -997,7 +997,7 @@ pre .javascript .function {
   background: #222;
   border: 2px solid #222;
   text-decoration: none;
-  border-radius: 0;
+  border-radius: 3;
   transition-property: background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -1182,7 +1182,7 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: normal;
   font-family: 'Pacifico', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -1887,7 +1887,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a36e7a;
+  background: #57d07e;
 }
 .links-of-blogroll {
   font-size: 13px;
