@@ -188,7 +188,7 @@ body {
   font-family: "PingFang SC", "Microsoft YaHei", sans-serif, 300;
   font-size: 20px;
   line-height: 2;
-  color: $bluewood;
+  color: #555;
   background: #fff;
 }
 @media (max-width: 767px) {
@@ -1020,7 +1020,7 @@ pre .javascript .function {
   display: block;
   width: 22px;
   height: 2px;
-  background: $bluewood;
+  background: #555;
   border-radius: 1px;
 }
 .btn-bar+.btn-bar {
@@ -1887,7 +1887,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6b61ff;
+  background: #fff4e3;
 }
 .links-of-blogroll {
   font-size: 13px;
