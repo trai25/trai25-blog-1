@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.6" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.6">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.6">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.6">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.6" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.6',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="本章是关于工作流的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。">
+<meta name="keywords" content="笔记,开发,网站,宁皓网">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习笔记 | 网站 01 - 工作流">
+<meta property="og:url" content="https://blog.trai25.me/2018/04/10/ninghao-web-01-workflow/index.html">
+<meta property="og:site_name" content="alt.">
+<meta property="og:description" content="本章是关于工作流的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://blog.trai25.me/uploads/15224996072117.png">
+<meta property="og:updated_time" content="2018-04-10T11:17:11.391Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习笔记 | 网站 01 - 工作流">
+<meta name="twitter:description" content="本章是关于工作流的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。">
+<meta name="twitter:image" content="https://blog.trai25.me/uploads/15224996072117.png">
+
+
+
+
+
+
+  <link rel="canonical" href="https://blog.trai25.me/2018/04/10/ninghao-web-01-workflow/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>学习笔记 | 网站 01 - 工作流 | alt.</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> 
+
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">alt.</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+          
+  <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-about">
+    <a href="/page/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+</li>
+
+      
+
+      
+    </ul>
+  
+
+  
+    
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
+  
+
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.trai25.me/2018/04/10/ninghao-web-01-workflow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="trai25">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="alt.">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">学习笔记 | 网站 01 - 工作流</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T19:13:41+08:00">2018-04-10</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/笔记/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/笔记/宁皓网/" itemprop="url" rel="index"><span itemprop="name">宁皓网</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/笔记/宁皓网/网站/" itemprop="url" rel="index"><span itemprop="name">网站</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/10/ninghao-web-01-workflow/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">Comments:</span> <span class="post-comments-count hc-comment-count" data-xid="2018/04/10/ninghao-web-01-workflow/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本章是关于<strong>工作流</strong>的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。</p>
+<a id="more"></a>
+<p><a href="https://ninghao.net/course/4688" target="_blank" rel="noopener">课程链接</a></p>
+<h1 id="1. 工作流"><a class="header-anchor" href="#1. 工作流" aria-hidden="true">¶</a> 1. 工作流</h1>
+<h2 id="1.1 工作流与工具"><a class="header-anchor" href="#1.1 工作流与工具" aria-hidden="true">¶</a> 1.1 工作流与工具</h2>
+<p><a href="https://ninghao.net/video/4690" target="_blank" rel="noopener">视频教程链接</a></p>
+<p>理论上来说，最简化的工作流是：</p>
+<ol>
+<li>通过文本编辑器编辑代码</li>
+<li>通过浏览器调试与预览页面</li>
+</ol>
+<p>但考虑到还有一些中间环节，实际的流程会稍微复杂一些，但无论如何，</p>
+<div class="note info"><p>应该尽可能只用必要的工具，避免复杂化带来的问题和冗余流程。</p></div>
+<h2 id="1.2 介绍使用的工具"><a class="header-anchor" href="#1.2 介绍使用的工具" aria-hidden="true">¶</a> 1.2 介绍使用的工具</h2>
+<p><a href="https://ninghao.net/video/4691" target="_blank" rel="noopener">视频教程链接</a></p>
+<h3 id="1.2.1 文本编辑器"><a class="header-anchor" href="#1.2.1 文本编辑器" aria-hidden="true">¶</a> 1.2.1 文本编辑器</h3>
+<p>推荐使用 <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> 出品的开源编辑器 <a href="https://atom.io/" target="_blank" rel="noopener">Atom</a>。</p>
+<p><img src="/uploads/15224996072117.png" alt=""></p>
+<h3 id="1.2.2 命令行工具"><a class="header-anchor" href="#1.2.2 命令行工具" aria-hidden="true">¶</a> 1.2.2 命令行工具</h3>
+<p>Mac 用户可以使用系统自带的 <strong>终端 App</strong> 或 <a href="http://www.iterm2.com" target="_blank" rel="noopener">iTerm</a>。</p>
+<h3 id="1.2.3 版本控制"><a class="header-anchor" href="#1.2.3 版本控制" aria-hidden="true">¶</a> 1.2.3 版本控制</h3>
+<p>推荐使用 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> + <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></p>
+<p>通过 <a href="https://brew.sh/" target="_blank" rel="noopener">homebrew</a> 安装 Git：</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">brew </span><span class="keyword">install </span>git</span><br></pre></td></tr></table></figure>
+<h3 id="1.2.4 Node.js"><a class="header-anchor" href="#1.2.4 Node.js" aria-hidden="true">¶</a> 1.2.4 Node.js</h3>
+<p>直接在 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js 官网</a> 下载安装</p>
+<p><strong>包管理工具</strong></p>
+<p>开发过程中会用到一些 Node.js 的功能包，这些功能包都需要一个<strong>包管理工具</strong>来进行管理，Node.js 安装后会自带一个包管理工具 <a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm</a>，也可以安装更可靠、速度更快的 <a href="https://yarnpkg.com/zh-Hans/" target="_blank" rel="noopener">yarn</a> ：</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">brew </span><span class="keyword">install </span>yarn</span><br></pre></td></tr></table></figure>
+<p>如果要使用 <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a> 或类似的 Node.js 版本管理工具，应该排除安装 Node.js 以便使用 nvm 的 Node.js 版本：</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install yarn --without-<span class="keyword">node</span><span class="title"></span></span><br></pre></td></tr></table></figure>
+<h2 id="1.3 准备前端页面设计工作流"><a class="header-anchor" href="#1.3 准备前端页面设计工作流" aria-hidden="true">¶</a> 1.3 准备前端页面设计工作流</h2>
+<p><a href="https://ninghao.net/video/4692" target="_blank" rel="noopener">视频教程链接</a></p>
+<h3 id="1.3.1 Clone 项目到本地"><a class="header-anchor" href="#1.3.1 Clone 项目到本地" aria-hidden="true">¶</a> 1.3.1 Clone 项目到本地</h3>
+<p>宁皓网的「网站」教程已提前准备好一套可用的工作流，只需将它从 GitHub 上 Clone 到本地既可。</p>
+<p>在 <code>终端</code> 中进入准备存放项目的目录，比如 <code>~/Desktop/trai25-project</code>，并将预先准备好的 <a href="https://github.com/ninghao/webapp-season1-pages" target="_blank" rel="noopener">工作流远程仓库</a> Clone 到这个目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ~/Desktop/trai25-project</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/ninghao/webapp-season1-pages.git</span></span><br></pre></td></tr></table></figure>
+<p>进入项目目录：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> webapp-season1-pages</span></span><br></pre></td></tr></table></figure>
+<p>通过 <code>git</code> 命令，根据需要将项目切换到相应的版本。如，切换到版本 <code>v1.0.0</code>：</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout v1<span class="number">.0</span><span class="number">.0</span></span><br></pre></td></tr></table></figure>
+<h3 id="1.3.2 安装项目依赖"><a class="header-anchor" href="#1.3.2 安装项目依赖" aria-hidden="true">¶</a> 1.3.2 安装项目依赖</h3>
+<p>用 Atom 编辑器查看项目文件，直接启动 Atom.app，或通过命令行工具启动：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> atom ./</span></span><br></pre></td></tr></table></figure>
+<p>可以看到项目根目录结构如下：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">app/</span><br><span class="line">semantic/</span><br><span class="line">.babelrc</span><br><span class="line">.editorconfig</span><br><span class="line">.gitignore</span><br><span class="line">README.md</span><br><span class="line">gulpfile<span class="selector-class">.babel</span><span class="selector-class">.js</span></span><br><span class="line">package.json</span><br><span class="line">semantic.json</span><br><span class="line">yarn.lock</span><br></pre></td></tr></table></figure>
+<p>查看根目录中 <code>package.json</code> 文件，该文件包含了本项目的相关信息，比如<strong>项目名称</strong> <code>name</code>、<strong>项目版本</strong> <code>version</code> 等等…</p>
+<ul>
+<li><code>devDependencies</code> ：项目的开发依赖</li>
+<li><code>dependencied</code> 项目的依赖</li>
+</ul>
+<p>通过 <code>yarn</code> 包管理工具自动安装项目所需依赖包：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yarn</span></span><br></pre></td></tr></table></figure>
+<p>安装完成后项目根目录中会新增一个 <code>node_modules</code> 目录，上一步安装的依赖包都安装在了这个目录。</p>
+<h2 id="1.4 了解项目的文件与目录"><a class="header-anchor" href="#1.4 了解项目的文件与目录" aria-hidden="true">¶</a> 1.4 了解项目的文件与目录</h2>
+<p><a href="https://ninghao.net/video/4693" target="_blank" rel="noopener">视频教程链接</a></p>
+<p>在上一节中，安装了必要的依赖包后，项目根目录中应包含以下内容：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">.git/</span> <span class="comment"># 项目的 git 仓库目录</span></span><br><span class="line">app/ <span class="comment"># 编译后的网站的目录</span></span><br><span class="line">node_modules/ <span class="comment"># Node.js 依赖包目录</span></span><br><span class="line">semantic/ <span class="comment"># Semantic UI 目录</span></span><br><span class="line"><span class="string">.babelrc</span> <span class="comment"># babel 的配置文件</span></span><br><span class="line"><span class="string">.editorconfig</span> <span class="comment"># atom 编辑器的配置文件，并非项目文件</span></span><br><span class="line"><span class="string">.gitignore</span> <span class="comment"># 定义了 git 版本控制时需要忽略的内容</span></span><br><span class="line">README.md <span class="comment"># 项目说明文当</span></span><br><span class="line">gulpfile.babel.js <span class="comment"># 定义了 gulp 自动化处理时要执行的任务</span></span><br><span class="line">package.json <span class="comment"># 对整个项目的描述</span></span><br><span class="line">semantic.json <span class="comment"># Semantic UI 框架的配置文件</span></span><br><span class="line">yarn.lock <span class="comment"># 描述了需要通过 yarn 安装的依赖包的具体版本</span></span><br></pre></td></tr></table></figure>
+<h1 id="2. 自动化任务"><a class="header-anchor" href="#2. 自动化任务" aria-hidden="true">¶</a> 2. 自动化任务</h1>
+<h2 id="2.1 自动化任务"><a class="header-anchor" href="#2.1 自动化任务" aria-hidden="true">¶</a> 2.1 自动化任务</h2>
+<p><a href="https://ninghao.net/video/4695" target="_blank" rel="noopener">视频教程链接</a></p>
+<h3 id="2.1.1 编译 Semantic UI 框架"><a class="header-anchor" href="#2.1.1 编译 Semantic UI 框架" aria-hidden="true">¶</a> 2.1.1 编译 Semantic UI 框架</h3>
+<p>首先进入项目目录，编译 <code>Semantic UI</code> 框架：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> webapp-season1-pages</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> gulp build-ui</span></span><br></pre></td></tr></table></figure>
+<p><code>gulp build-ui</code> 命令将执行 <code>gulpfile.babel.js</code> 文件中定义的相应任务，比如将 <code>.less</code> 样式文件编译成普通的 <code>.css</code> 文件，编译好的文件会放到 <code>/semantic/dist/</code> 目录中。</p>
+<p>如果想修改编译后文件的存放位置，可以在项目根目录下 <code>semantic.json</code> 文件中修改：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"output"</span>: &#123;</span><br><span class="line"><span class="string">"packaged"</span>: <span class="string">"dist/"</span>,</span><br><span class="line"><span class="string">"uncompressed"</span>: <span class="string">"dist/components/"</span>,</span><br><span class="line"><span class="string">"compressed"</span>: <span class="string">"dist/components/"</span>,</span><br><span class="line"><span class="string">"themes"</span>: <span class="string">"dist/themes/"</span></span><br></pre></td></tr></table></figure>
+<h3 id="2.1.2 监视并自动编译 Semantic UI 的变化"><a class="header-anchor" href="#2.1.2 监视并自动编译 Semantic UI 的变化" aria-hidden="true">¶</a> 2.1.2 监视并自动编译 Semantic UI 的变化</h3>
+<p>每次修改了 <code>Semantic UI</code> 之后都需要执行 <code>gulp build-ui</code> 命令重新编译一次。这里可以执行另一个自动化任务，它可以在每次修改后自动编译：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gulp watch-ui</span></span><br></pre></td></tr></table></figure>
+<p>这个任务会持续监视 <code>Semantic UI</code> 的变化并自动编译。</p>
+<h3 id="2.1.3 创建本地服务器"><a class="header-anchor" href="#2.1.3 创建本地服务器" aria-hidden="true">¶</a> 2.1.3 创建本地服务器</h3>
+<p>需要创建一个本地服务器来运行编译好的网站。为避免中断 <code>gulp build-ui</code> 任务，在终端<strong>新开一个标签页</strong>，输入命令创建服务器：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gulp serve</span></span><br></pre></td></tr></table></figure>
+<p>当服务器创建完成后，会在浏览器中自动打开地址 <code>localhost:3300</code>，该页面的内容就是 <code>app/index.html</code> 文件。</p>
+<div class="note info"><p>只要 `gulp watch-ui` 和 `gulp serve` 任务没有中断，当文件编辑后就能在浏览器中即时呈现。</p></div>
+<p>[本章未完待续…]</p>
+<h2 id="2.2 本地服务器"><a class="header-anchor" href="#2.2 本地服务器" aria-hidden="true">¶</a> 2.2 本地服务器</h2>
+<h2 id="2.3 深入了解自动化任务"><a class="header-anchor" href="#2.3 深入了解自动化任务" aria-hidden="true">¶</a> 2.3 深入了解自动化任务</h2>
+<h2 id="2.4 深入了解本地服务器"><a class="header-anchor" href="#2.4 深入了解本地服务器" aria-hidden="true">¶</a> 2.4 深入了解本地服务器</h2>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author: </strong>trai25</li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://blog.trai25.me/2018/04/10/ninghao-web-01-workflow/" title="学习笔记 | 网站 01 - 工作流">https://blog.trai25.me/2018/04/10/ninghao-web-01-workflow/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> unless stating additionally.</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+            <a href="/tags/开发/" rel="tag"># 开发</a>
+          
+            <a href="/tags/网站/" rel="tag"># 网站</a>
+          
+            <a href="/tags/宁皓网/" rel="tag"># 宁皓网</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/10/ninghao-web-00-introduction/" rel="next" title="ninghao-web-00-introduction">
+                <i class="fa fa-chevron-left"></i> ninghao-web-00-introduction
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="hypercomments_widget"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpeg"
+                alt="trai25" />
+            
+              <p class="site-author-name" itemprop="name">trai25</p>
+              <p class="site-description motion-element" itemprop="description">Life + Passion + Curiosity</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives">
+                
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/trai25" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://t.me/trai25" target="_blank" title="Telegram"><i class="fa fa-fw fa-telegram"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://dribbble.com/trai25" target="_blank" title="Dribbble"><i class="fa fa-fw fa-dribbble"></i></a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1. 工作流"><span class="nav-number">1.</span> <span class="nav-text">¶ 1. 工作流</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1.1 工作流与工具"><span class="nav-number">1.1.</span> <span class="nav-text">¶ 1.1 工作流与工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1.2 介绍使用的工具"><span class="nav-number">1.2.</span> <span class="nav-text">¶ 1.2 介绍使用的工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1.2.1 文本编辑器"><span class="nav-number">1.2.1.</span> <span class="nav-text">¶ 1.2.1 文本编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1.2.2 命令行工具"><span class="nav-number">1.2.2.</span> <span class="nav-text">¶ 1.2.2 命令行工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1.2.3 版本控制"><span class="nav-number">1.2.3.</span> <span class="nav-text">¶ 1.2.3 版本控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1.2.4 Node.js"><span class="nav-number">1.2.4.</span> <span class="nav-text">¶ 1.2.4 Node.js</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1.3 准备前端页面设计工作流"><span class="nav-number">1.3.</span> <span class="nav-text">¶ 1.3 准备前端页面设计工作流</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1.3.1 Clone 项目到本地"><span class="nav-number">1.3.1.</span> <span class="nav-text">¶ 1.3.1 Clone 项目到本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1.3.2 安装项目依赖"><span class="nav-number">1.3.2.</span> <span class="nav-text">¶ 1.3.2 安装项目依赖</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1.4 了解项目的文件与目录"><span class="nav-number">1.4.</span> <span class="nav-text">¶ 1.4 了解项目的文件与目录</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2. 自动化任务"><span class="nav-number">2.</span> <span class="nav-text">¶ 2. 自动化任务</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2.1 自动化任务"><span class="nav-number">2.1.</span> <span class="nav-text">¶ 2.1 自动化任务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2.1.1 编译 Semantic UI 框架"><span class="nav-number">2.1.1.</span> <span class="nav-text">¶ 2.1.1 编译 Semantic UI 框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2.1.2 监视并自动编译 Semantic UI 的变化"><span class="nav-number">2.1.2.</span> <span class="nav-text">¶ 2.1.2 监视并自动编译 Semantic UI 的变化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2.1.3 创建本地服务器"><span class="nav-number">2.1.3.</span> <span class="nav-text">¶ 2.1.3 创建本地服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2.2 本地服务器"><span class="nav-number">2.2.</span> <span class="nav-text">¶ 2.2 本地服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2.3 深入了解自动化任务"><span class="nav-number">2.3.</span> <span class="nav-text">¶ 2.3 深入了解自动化任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2.4 深入了解本地服务器"><span class="nav-number">2.4.</span> <span class="nav-text">¶ 2.4 深入了解本地服务器</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate"> 
+    <i class="fa fa-copyright"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">trai25</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.6</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.6"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.6"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.6"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.6"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.6"></script>
+
+
+
+  
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 103307, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 103307, xid: "2018/04/10/ninghao-web-01-workflow/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/103307/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
