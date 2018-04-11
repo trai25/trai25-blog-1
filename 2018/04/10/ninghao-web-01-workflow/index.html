@@ -127,7 +127,7 @@
 <meta property="og:description" content="本章是关于工作流的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog.trai25.me/uploads/15224996072117.png">
-<meta property="og:updated_time" content="2018-04-11T16:15:06.418Z">
+<meta property="og:updated_time" content="2018-04-11T16:20:37.784Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记 | 网站 01 - 工作流">
 <meta name="twitter:description" content="本章是关于工作流的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。">
@@ -461,8 +461,8 @@
         <p>本章是关于<strong>工作流</strong>的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。</p>
 <a id="more"></a>
 <p><a href="https://ninghao.net/course/4688" target="_blank" rel="noopener">课程链接</a></p>
-<h2 id="工作流"><a class="header-anchor" href="#工作流" aria-hidden="true">¶</a> 工作流</h2>
-<h3 id="工作流与工具"><a class="header-anchor" href="#工作流与工具" aria-hidden="true">¶</a> 工作流与工具</h3>
+<h2 id="工作流"><a class="markdownIt-Anchor" href="#工作流"></a> 工作流</h2>
+<h3 id="工作流与工具"><a class="markdownIt-Anchor" href="#工作流与工具"></a> 工作流与工具</h3>
 <p><a href="https://ninghao.net/video/4690" target="_blank" rel="noopener">视频教程链接</a></p>
 <p>理论上来说，最简化的工作流是：</p>
 <ol>
@@ -470,28 +470,28 @@
 <li>通过浏览器调试与预览页面</li>
 </ol>
 <p>但考虑到还有一些中间环节，实际的流程会稍微复杂一些，但无论如何，</p>
-<div class="note info">应该尽可能只用必要的工具，避免复杂化带来的问题和冗余流程。 </div>
-<h3 id="介绍使用的工具"><a class="header-anchor" href="#介绍使用的工具" aria-hidden="true">¶</a> 介绍使用的工具</h3>
+<div class="note info"><p>应该尽可能只用必要的工具，避免复杂化带来的问题和冗余流程。</p></div>
+<h3 id="介绍使用的工具"><a class="markdownIt-Anchor" href="#介绍使用的工具"></a> 介绍使用的工具</h3>
 <p><a href="https://ninghao.net/video/4691" target="_blank" rel="noopener">视频教程链接</a></p>
-<h4 id="文本编辑器"><a class="header-anchor" href="#文本编辑器" aria-hidden="true">¶</a> 文本编辑器</h4>
+<h4 id="文本编辑器"><a class="markdownIt-Anchor" href="#文本编辑器"></a> 文本编辑器</h4>
 <p>推荐使用 <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> 出品的开源编辑器 <a href="https://atom.io/" target="_blank" rel="noopener">Atom</a>。</p>
 <p><img src="/uploads/15224996072117.png" alt=""></p>
-<h4 id="命令行工具"><a class="header-anchor" href="#命令行工具" aria-hidden="true">¶</a> 命令行工具</h4>
+<h4 id="命令行工具"><a class="markdownIt-Anchor" href="#命令行工具"></a> 命令行工具</h4>
 <p>Mac 用户可以使用系统自带的 <strong>终端 App</strong> 或 <a href="http://www.iterm2.com" target="_blank" rel="noopener">iTerm</a>。</p>
-<h4 id="版本控制"><a class="header-anchor" href="#版本控制" aria-hidden="true">¶</a> 版本控制</h4>
+<h4 id="版本控制"><a class="markdownIt-Anchor" href="#版本控制"></a> 版本控制</h4>
 <p>推荐使用 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> + <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></p>
 <p>通过 <a href="https://brew.sh/" target="_blank" rel="noopener">homebrew</a> 安装 Git：</p>
 <figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">brew </span><span class="keyword">install </span>git</span><br></pre></td></tr></table></figure>
-<h4 id="Node.js"><a class="header-anchor" href="#Node.js" aria-hidden="true">¶</a> Node.js</h4>
+<h4 id="nodejs"><a class="markdownIt-Anchor" href="#nodejs"></a> Node.js</h4>
 <p>直接在 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js 官网</a> 下载安装</p>
 <p><strong>包管理工具</strong></p>
 <p>开发过程中会用到一些 Node.js 的功能包，这些功能包都需要一个<strong>包管理工具</strong>来进行管理，Node.js 安装后会自带一个包管理工具 <a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm</a>，也可以安装更可靠、速度更快的 <a href="https://yarnpkg.com/zh-Hans/" target="_blank" rel="noopener">yarn</a> ：</p>
 <figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">brew </span><span class="keyword">install </span>yarn</span><br></pre></td></tr></table></figure>
 <p>如果要使用 <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a> 或类似的 Node.js 版本管理工具，应该排除安装 Node.js 以便使用 nvm 的 Node.js 版本：</p>
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install yarn --without-<span class="keyword">node</span><span class="title"></span></span><br></pre></td></tr></table></figure>
-<h3 id="准备前端页面设计工作流"><a class="header-anchor" href="#准备前端页面设计工作流" aria-hidden="true">¶</a> 准备前端页面设计工作流</h3>
+<h3 id="准备前端页面设计工作流"><a class="markdownIt-Anchor" href="#准备前端页面设计工作流"></a> 准备前端页面设计工作流</h3>
 <p><a href="https://ninghao.net/video/4692" target="_blank" rel="noopener">视频教程链接</a></p>
-<h4 id="Clone 项目到本地"><a class="header-anchor" href="#Clone 项目到本地" aria-hidden="true">¶</a> Clone 项目到本地</h4>
+<h4 id="clone-项目到本地"><a class="markdownIt-Anchor" href="#clone-项目到本地"></a> Clone 项目到本地</h4>
 <p>宁皓网的「网站」教程已提前准备好一套可用的工作流，只需将它从 GitHub 上 Clone 到本地既可。</p>
 <p>在 <code>终端</code> 中进入准备存放项目的目录，比如 <code>~/Desktop/trai25-project</code>，并将预先准备好的 <a href="https://github.com/ninghao/webapp-season1-pages" target="_blank" rel="noopener">工作流远程仓库</a> Clone 到这个目录</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ~/Desktop/trai25-project</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/ninghao/webapp-season1-pages.git</span></span><br></pre></td></tr></table></figure>
@@ -499,7 +499,7 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> webapp-season1-pages</span></span><br></pre></td></tr></table></figure>
 <p>通过 <code>git</code> 命令，根据需要将项目切换到相应的版本。如，切换到版本 <code>v1.0.0</code>：</p>
 <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout v1<span class="number">.0</span><span class="number">.0</span></span><br></pre></td></tr></table></figure>
-<h4 id="安装项目依赖"><a class="header-anchor" href="#安装项目依赖" aria-hidden="true">¶</a> 安装项目依赖</h4>
+<h4 id="安装项目依赖"><a class="markdownIt-Anchor" href="#安装项目依赖"></a> 安装项目依赖</h4>
 <p>用 Atom 编辑器查看项目文件，直接启动 Atom.app，或通过命令行工具启动：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> atom ./</span></span><br></pre></td></tr></table></figure>
 <p>可以看到项目根目录结构如下：</p>
@@ -513,60 +513,48 @@
 <p>通过 <code>yarn</code> 包管理工具自动安装项目所需依赖包：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yarn</span></span><br></pre></td></tr></table></figure>
 <p>安装完成后项目根目录中会新增一个 <code>node_modules</code> 目录，上一步安装的依赖包都安装在了这个目录。</p>
-<h3 id="了解项目的文件与目录"><a class="header-anchor" href="#了解项目的文件与目录" aria-hidden="true">¶</a> 了解项目的文件与目录</h3>
+<h3 id="了解项目的文件与目录"><a class="markdownIt-Anchor" href="#了解项目的文件与目录"></a> 了解项目的文件与目录</h3>
 <p><a href="https://ninghao.net/video/4693" target="_blank" rel="noopener">视频教程链接</a></p>
 <p>在上一小节中，安装了必要的依赖包后，项目根目录中应包含以下内容：</p>
 <figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── <span class="string">.git/</span>               <span class="comment"># 项目的 git 仓库目录</span></span><br><span class="line">├── app/                <span class="comment"># 编译后的网站的目录</span></span><br><span class="line">├── node_modules/               <span class="comment"># Node.js 依赖包目录</span></span><br><span class="line">├── semantic/               <span class="comment"># Semantic UI 目录</span></span><br><span class="line">├── <span class="string">.babelrc</span>                <span class="comment"># babel 的配置文件</span></span><br><span class="line">├── <span class="string">.editorconfig</span>               <span class="comment"># atom 编辑器的配置文件，并非项目文件</span></span><br><span class="line">├── <span class="string">.gitignore</span>              <span class="comment"># 定义了 git 版本控制时需要忽略的内容</span></span><br><span class="line">├── README.md               <span class="comment"># 项目说明文当</span></span><br><span class="line">├── gulpfile.babel.js               <span class="comment"># 定义了 gulp 自动化处理时要执行的任务</span></span><br><span class="line">├── package.json                <span class="comment"># 对整个项目的描述</span></span><br><span class="line">├── semantic.json               <span class="comment"># Semantic UI 框架的配置文件</span></span><br><span class="line">├── yarn.lock               <span class="comment"># 描述了需要通过 yarn 安装的依赖包的具体版本</span></span><br></pre></td></tr></table></figure>
-<h2 id="自动化任务"><a class="header-anchor" href="#自动化任务" aria-hidden="true">¶</a> 自动化任务</h2>
-<h3 id="自动化任务-2"><a class="header-anchor" href="#自动化任务-2" aria-hidden="true">¶</a> 自动化任务</h3>
+<h2 id="自动化任务"><a class="markdownIt-Anchor" href="#自动化任务"></a> 自动化任务</h2>
+<h3 id="自动化任务-2"><a class="markdownIt-Anchor" href="#自动化任务-2"></a> 自动化任务</h3>
 <p><a href="https://ninghao.net/video/4695" target="_blank" rel="noopener">视频教程链接</a></p>
-<h4 id="编译 Semantic UI 框架"><a class="header-anchor" href="#编译 Semantic UI 框架" aria-hidden="true">¶</a> 编译 Semantic UI 框架</h4>
+<h4 id="编译-semantic-ui-框架"><a class="markdownIt-Anchor" href="#编译-semantic-ui-框架"></a> 编译 Semantic UI 框架</h4>
 <p>首先进入项目目录，编译 <code>Semantic UI</code> 框架：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> webapp-season1-pages</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> gulp build-ui</span></span><br></pre></td></tr></table></figure>
 <p><code>gulp build-ui</code> 命令将执行 <code>gulpfile.babel.js</code> 文件中定义的相应任务，比如将 <code>.less</code> 样式文件编译成普通的 <code>.css</code> 文件，编译好的文件会放到 <code>/semantic/dist/</code> 目录中。</p>
 <p>如果想修改编译后文件的存放位置，可以在项目根目录下 <code>semantic.json</code> 文件中修改：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">"output": &#123;</span><br><span class="line">"packaged": "dist/",</span><br><span class="line">"uncompressed": "dist/components/",</span><br><span class="line">"compressed": "dist/components/",</span><br><span class="line">"themes": "dist/themes/"</span><br></pre></td></tr></table></figure>
-<h4 id="监视并自动编译 Semantic UI 的变化"><a class="header-anchor" href="#监视并自动编译 Semantic UI 的变化" aria-hidden="true">¶</a> 监视并自动编译 Semantic UI 的变化</h4>
+<h4 id="监视并自动编译-semantic-ui-的变化"><a class="markdownIt-Anchor" href="#监视并自动编译-semantic-ui-的变化"></a> 监视并自动编译 Semantic UI 的变化</h4>
 <p>每次修改了 <code>Semantic UI</code> 之后都需要执行 <code>gulp build-ui</code> 命令重新编译一次。这里可以执行另一个自动化任务，它可以在每次修改后自动编译：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gulp watch-ui</span></span><br></pre></td></tr></table></figure>
 <p>这个任务会持续监视 <code>Semantic UI</code> 的变化并自动编译。</p>
-<h4 id="创建本地服务器"><a class="header-anchor" href="#创建本地服务器" aria-hidden="true">¶</a> 创建本地服务器</h4>
+<h4 id="创建本地服务器"><a class="markdownIt-Anchor" href="#创建本地服务器"></a> 创建本地服务器</h4>
 <p>需要创建一个本地服务器来运行编译好的网站。为避免中断 <code>gulp build-ui</code> 任务，在终端<strong>新开一个标签页</strong>，输入命令创建服务器：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gulp serve</span></span><br></pre></td></tr></table></figure>
 <p>当服务器创建完成后，会在浏览器中自动打开地址 <code>localhost:3300</code>，该页面的内容就是 <code>app/index.html</code> 文件。</p>
-<div class="note info"><p>只要 <code>gulp watch-ui</code> 和 <code>gulp serve</code> 任务没有中断，当文件编辑后就能在浏览器中即时呈现。</p>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"></div>
-
-### 本地服务器
-
-#### Browsersync 浏览器同步
-
-在上一步中启动服务器后，返回如下相关信息：
-
-undefined
-
-这里是通过 [Browsersync](https://browsersync.io/) 为项目创建服务器并提供了浏览器同步功能，其中的 `Local` 和 `External` 两个地址的内容是完全同步的。
-
-#### 同步测试
-
-打开的页面由于没有添加内容，浏览器中显示一片空白。这时候可以尝试在 `app/index.html` 的 `<body>` 下添加一些内容，保存文件后浏览器中就会有所呈现。
-
-### 深入了解自动化任务
-
-本项目使用 `Gulp` 来执行自动化任务，具体的任务在根目录下 `gulofile.babel.js` 中定义。
-
-<div class="note info"><p>这里知道就行了，暂时没必要搞太清楚（实际上是我搞不清楚），总之就是通过 <code>Gulp</code> 来执行一系列提前预设好的流程。我把它理解成网站开发时用的 <a href="https://workflow.is/" target="_blank" rel="noopener">Workflow app</a></p>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"></div>
-<h3 id="深入了解本地服务器"><a class="header-anchor" href="#深入了解本地服务器" aria-hidden="true">¶</a> 深入了解本地服务器</h3>
+<div class="note info"><p>只要 <code>gulp watch-ui</code> 和 <code>gulp serve</code> 任务没有中断，当文件编辑后就能在浏览器中即时呈现。</p></div>
+<h3 id="本地服务器"><a class="markdownIt-Anchor" href="#本地服务器"></a> 本地服务器</h3>
+<h4 id="browsersync-浏览器同步"><a class="markdownIt-Anchor" href="#browsersync-浏览器同步"></a> Browsersync 浏览器同步</h4>
+<p>在上一步中启动服务器后，返回如下相关信息：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">[NINGHAO]</span> <span class="string">Access</span> <span class="attr">URLs:</span></span><br><span class="line"><span class="bullet"> -</span><span class="bullet">---------------------------------</span></span><br><span class="line"><span class="attr">       Local:</span> <span class="attr">http://localhost:3300</span>             <span class="comment"># 本地服务器地址</span></span><br><span class="line"><span class="attr">    External:</span> <span class="attr">http://10.0.0.4:3300</span>              <span class="comment"># 服务器外部访问地址（局域网）</span></span><br><span class="line"><span class="bullet"> -</span><span class="bullet">---------------------------------</span></span><br><span class="line"><span class="attr">          UI:</span> <span class="attr">http://localhost:3001</span>               </span><br><span class="line"> <span class="string">UI</span> <span class="attr">External:</span> <span class="attr">http://10.0.0.4:3001</span></span><br><span class="line"><span class="bullet"> -</span><span class="bullet">---------------------------------</span></span><br><span class="line"><span class="string">[NINGHAO]</span> <span class="string">Serving</span> <span class="string">files</span> <span class="attr">from:</span> <span class="string">.tmp</span></span><br><span class="line"><span class="string">[NINGHAO]</span> <span class="string">Serving</span> <span class="string">files</span> <span class="attr">from:</span> <span class="string">app</span></span><br><span class="line"><span class="string">[NINGHAO]</span> <span class="string">Serving</span> <span class="string">files</span> <span class="attr">from:</span> <span class="string">node_modules</span></span><br><span class="line"><span class="string">[NINGHAO]</span> <span class="string">Serving</span> <span class="string">files</span> <span class="attr">from:</span> <span class="string">semantic/dist</span></span><br></pre></td></tr></table></figure>
+<div class="note info"><p>这里是通过 <a href="https://browsersync.io/" target="_blank" rel="noopener">Browsersync</a> 为项目创建服务器并提供了浏览器同步功能，其中的 <code>Local</code> 和 <code>External</code> 两个地址的内容是完全同步的。</p></div>
+<h4 id="同步测试"><a class="markdownIt-Anchor" href="#同步测试"></a> 同步测试</h4>
+<p>打开的页面由于没有添加内容，浏览器中显示一片空白。这时候可以尝试在 <code>app/index.html</code> 的 <code>&lt;body&gt;</code> 下添加一些内容，保存文件后浏览器中就会有所呈现。</p>
+<h3 id="深入了解自动化任务"><a class="markdownIt-Anchor" href="#深入了解自动化任务"></a> 深入了解自动化任务</h3>
+<p>本项目使用 <code>Gulp</code> 来执行自动化任务，具体的任务在根目录下 <code>gulofile.babel.js</code> 中定义。</p>
+<div class="note info"><p>这里知道就行了，暂时没必要搞太清楚（实际上是我搞不清楚），总之就是通过 <code>Gulp</code> 来执行一系列提前预设好的流程。我把它理解成网站开发时用的 <a href="https://workflow.is/" target="_blank" rel="noopener">Workflow app</a></p></div>
+<h3 id="深入了解本地服务器"><a class="markdownIt-Anchor" href="#深入了解本地服务器"></a> 深入了解本地服务器</h3>
 <p>在 <code>gulpfile.babel.js</code> 文件中定义了<strong>本地服务器自动化任务</strong>：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Watch files for changes &amp; reload</span></span><br><span class="line">gulp.task(<span class="string">'serve'</span>, [<span class="string">'scripts'</span>, <span class="string">'styles'</span>], () =&gt; &#123;</span><br><span class="line">  browserSync(&#123;</span><br><span class="line">    notify: <span class="literal">false</span>,</span><br><span class="line">    <span class="comment">// Customize the Browsersync console logging prefix</span></span><br><span class="line">    logPrefix: <span class="string">'NINGHAO'</span>,</span><br><span class="line">    <span class="comment">// Allow scroll syncing across breakpoints</span></span><br><span class="line">    scrollElementMapping: [<span class="string">'main'</span>, <span class="string">'.mdl-layout'</span>],</span><br><span class="line">    <span class="comment">// Run as an https by uncommenting 'https: true'</span></span><br><span class="line">    <span class="comment">// Note: this uses an unsigned certificate which on first access</span></span><br><span class="line">    <span class="comment">//       will present a certificate warning in the browser.</span></span><br><span class="line">    <span class="comment">// https: true,</span></span><br><span class="line">    server: [<span class="string">'.tmp'</span>, <span class="string">'app'</span>, <span class="string">'node_modules'</span>, <span class="string">'semantic/dist'</span>],</span><br><span class="line">    port: <span class="number">3300</span></span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  gulp.watch([<span class="string">'app/**/*.html'</span>], reload);</span><br><span class="line">  gulp.watch([<span class="string">'app/styles/**/*.&#123;scss,css&#125;'</span>], [<span class="string">'styles'</span>, reload]);</span><br><span class="line">  gulp.watch([<span class="string">'app/scripts/**/*.js'</span>], [<span class="string">'lint'</span>, <span class="string">'scripts'</span>, reload]);</span><br><span class="line">  gulp.watch([<span class="string">'app/images/**/*'</span>], reload);</span><br><span class="line">  gulp.watch([<span class="string">'semantic/dist/**/*.&#123;css,js&#125;'</span>], reload);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="页面"><a class="header-anchor" href="#页面" aria-hidden="true">¶</a> 页面</h2>
-<h3 id="页面-2"><a class="header-anchor" href="#页面-2" aria-hidden="true">¶</a> 页面</h3>
+<h2 id="页面"><a class="markdownIt-Anchor" href="#页面"></a> 页面</h2>
+<h3 id="页面-2"><a class="markdownIt-Anchor" href="#页面-2"></a> 页面</h3>
 <p>切换项目版本为 <code>v1.2.3</code>：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout v1.2.3</span><br></pre></td></tr></table></figure>
 <p>这时候目录结构如下（仅显示 2 级目录）</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── README.md</span><br><span class="line">├── app                 // 编译后的网站文件</span><br><span class="line">│   ├── images</span><br><span class="line">│   ├── index.html              // 网站首页</span><br><span class="line">│   ├── scripts</span><br><span class="line">│   ├── service-worker.js</span><br><span class="line">│   └── styles</span><br><span class="line">├── dist</span><br><span class="line">│   ├── scripts</span><br><span class="line">│   └── styles</span><br><span class="line">├── gulpfile.babel.js</span><br><span class="line">├── node_modules</span><br><span class="line">│   ├── [...]               // 由于 node_modules 的子目录数量巨大，这里先省略</span><br><span class="line">├── package.json</span><br><span class="line">├── semantic</span><br><span class="line">│   ├── dist</span><br><span class="line">│   ├── gulpfile.js</span><br><span class="line">│   ├── src</span><br><span class="line">│   └── tasks</span><br><span class="line">├── semantic.json</span><br><span class="line">└── yarn.lock</span><br></pre></td></tr></table></figure>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"></body>
+
       
     </div>
 
@@ -834,7 +822,7 @@ undefined
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#工作流"><span class="nav-number">1.</span> <span class="nav-text">¶ 工作流</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#工作流与工具"><span class="nav-number">1.1.</span> <span class="nav-text">¶ 工作流与工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍使用的工具"><span class="nav-number">1.2.</span> <span class="nav-text">¶ 介绍使用的工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#文本编辑器"><span class="nav-number">1.2.1.</span> <span class="nav-text">¶ 文本编辑器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行工具"><span class="nav-number">1.2.2.</span> <span class="nav-text">¶ 命令行工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#版本控制"><span class="nav-number">1.2.3.</span> <span class="nav-text">¶ 版本控制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Node.js"><span class="nav-number">1.2.4.</span> <span class="nav-text">¶ Node.js</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备前端页面设计工作流"><span class="nav-number">1.3.</span> <span class="nav-text">¶ 准备前端页面设计工作流</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Clone 项目到本地"><span class="nav-number">1.3.1.</span> <span class="nav-text">¶ Clone 项目到本地</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装项目依赖"><span class="nav-number">1.3.2.</span> <span class="nav-text">¶ 安装项目依赖</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#了解项目的文件与目录"><span class="nav-number">1.4.</span> <span class="nav-text">¶ 了解项目的文件与目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动化任务"><span class="nav-number">2.</span> <span class="nav-text">¶ 自动化任务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#自动化任务-2"><span class="nav-number">2.1.</span> <span class="nav-text">¶ 自动化任务</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#编译 Semantic UI 框架"><span class="nav-number">2.1.1.</span> <span class="nav-text">¶ 编译 Semantic UI 框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#监视并自动编译 Semantic UI 的变化"><span class="nav-number">2.1.2.</span> <span class="nav-text">¶ 监视并自动编译 Semantic UI 的变化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建本地服务器"><span class="nav-number">2.1.3.</span> <span class="nav-text">¶ 创建本地服务器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#深入了解本地服务器"><span class="nav-number">2.2.</span> <span class="nav-text">¶ 深入了解本地服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面"><span class="nav-number">3.</span> <span class="nav-text">¶ 页面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#页面-2"><span class="nav-number">3.1.</span> <span class="nav-text">¶ 页面</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#工作流"><span class="nav-number">1.</span> <span class="nav-text"> 工作流</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#工作流与工具"><span class="nav-number">1.1.</span> <span class="nav-text"> 工作流与工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍使用的工具"><span class="nav-number">1.2.</span> <span class="nav-text"> 介绍使用的工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#文本编辑器"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 文本编辑器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行工具"><span class="nav-number">1.2.2.</span> <span class="nav-text"> 命令行工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#版本控制"><span class="nav-number">1.2.3.</span> <span class="nav-text"> 版本控制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nodejs"><span class="nav-number">1.2.4.</span> <span class="nav-text"> Node.js</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备前端页面设计工作流"><span class="nav-number">1.3.</span> <span class="nav-text"> 准备前端页面设计工作流</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#clone-项目到本地"><span class="nav-number">1.3.1.</span> <span class="nav-text"> Clone 项目到本地</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装项目依赖"><span class="nav-number">1.3.2.</span> <span class="nav-text"> 安装项目依赖</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#了解项目的文件与目录"><span class="nav-number">1.4.</span> <span class="nav-text"> 了解项目的文件与目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动化任务"><span class="nav-number">2.</span> <span class="nav-text"> 自动化任务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#自动化任务-2"><span class="nav-number">2.1.</span> <span class="nav-text"> 自动化任务</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#编译-semantic-ui-框架"><span class="nav-number">2.1.1.</span> <span class="nav-text"> 编译 Semantic UI 框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#监视并自动编译-semantic-ui-的变化"><span class="nav-number">2.1.2.</span> <span class="nav-text"> 监视并自动编译 Semantic UI 的变化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建本地服务器"><span class="nav-number">2.1.3.</span> <span class="nav-text"> 创建本地服务器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地服务器"><span class="nav-number">2.2.</span> <span class="nav-text"> 本地服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#browsersync-浏览器同步"><span class="nav-number">2.2.1.</span> <span class="nav-text"> Browsersync 浏览器同步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#同步测试"><span class="nav-number">2.2.2.</span> <span class="nav-text"> 同步测试</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#深入了解自动化任务"><span class="nav-number">2.3.</span> <span class="nav-text"> 深入了解自动化任务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#深入了解本地服务器"><span class="nav-number">2.4.</span> <span class="nav-text"> 深入了解本地服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面"><span class="nav-number">3.</span> <span class="nav-text"> 页面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#页面-2"><span class="nav-number">3.1.</span> <span class="nav-text"> 页面</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -883,7 +871,7 @@ undefined
 <!--字数统计 展示 开始-->
   <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共7.7k字</span>
+  <span class="post-count">博客全站共9.2k字</span>
 </div>
 <!--字数统计 展示 结束-->
 </div>
