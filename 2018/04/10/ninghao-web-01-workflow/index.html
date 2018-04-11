@@ -127,7 +127,7 @@
 <meta property="og:description" content="本章是关于工作流的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog.trai25.me/uploads/15224996072117.png">
-<meta property="og:updated_time" content="2018-04-11T07:07:48.783Z">
+<meta property="og:updated_time" content="2018-04-11T07:11:36.913Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记 | 网站 01 - 工作流">
 <meta name="twitter:description" content="本章是关于工作流的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。">
@@ -525,7 +525,7 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> webapp-season1-pages</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> gulp build-ui</span></span><br></pre></td></tr></table></figure>
 <p><code>gulp build-ui</code> 命令将执行 <code>gulpfile.babel.js</code> 文件中定义的相应任务，比如将 <code>.less</code> 样式文件编译成普通的 <code>.css</code> 文件，编译好的文件会放到 <code>/semantic/dist/</code> 目录中。</p>
 <p>如果想修改编译后文件的存放位置，可以在项目根目录下 <code>semantic.json</code> 文件中修改：</p>
-<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"output"</span>: &#123;</span><br><span class="line"><span class="string">"packaged"</span>: <span class="string">"dist/"</span>,</span><br><span class="line"><span class="string">"uncompressed"</span>: <span class="string">"dist/components/"</span>,</span><br><span class="line"><span class="string">"compressed"</span>: <span class="string">"dist/components/"</span>,</span><br><span class="line"><span class="string">"themes"</span>: <span class="string">"dist/themes/"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">"output": &#123;</span><br><span class="line">"packaged": "dist/",</span><br><span class="line">"uncompressed": "dist/components/",</span><br><span class="line">"compressed": "dist/components/",</span><br><span class="line">"themes": "dist/themes/"</span><br></pre></td></tr></table></figure>
 <h3 id="监视并自动编译-semantic-ui-的变化"><a class="markdownIt-Anchor" href="#监视并自动编译-semantic-ui-的变化"></a> 监视并自动编译 Semantic UI 的变化</h3>
 <p>每次修改了 <code>Semantic UI</code> 之后都需要执行 <code>gulp build-ui</code> 命令重新编译一次。这里可以执行另一个自动化任务，它可以在每次修改后自动编译：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gulp watch-ui</span></span><br></pre></td></tr></table></figure>
