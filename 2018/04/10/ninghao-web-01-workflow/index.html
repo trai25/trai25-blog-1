@@ -127,7 +127,7 @@
 <meta property="og:description" content="本章是关于工作流的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog.trai25.me/uploads/15224996072117.png">
-<meta property="og:updated_time" content="2018-04-12T09:54:38.691Z">
+<meta property="og:updated_time" content="2018-04-12T09:57:01.665Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记 | 网站 01 - 工作流">
 <meta name="twitter:description" content="本章是关于工作流的学习笔记，包含了在正式开始开发工作之前需要的准备工作，了解项目开发需要用到的环境配置、工具和操作流程。">
@@ -562,7 +562,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"styles/main.css"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>还有在 <code>&lt;/body&gt;</code> 前面的 <strong>Javascript 文件：</strong></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery/dist/jquery.min.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"semantic.min.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"scripts/main.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>然而教程中说，这几个被引用的文件真实位置并不是 <code>src=&quot;&quot;</code> 中的位置，而是来自几个文件夹：</p>
+<p>然而教程中说，这几个被引用的文件真实位置并不是 <code>href=&quot;&quot;</code> 和 <code>src=&quot;&quot;</code> 中的位置，而是来自几个文件夹：</p>
 <ul>
 <li><code>.tmp/style</code></li>
 <li><code>dist/style</code></li>
@@ -572,7 +572,7 @@
 <div class="note warning"><p>视频教程中说 <code>dist</code> 目录里是最终的发行版。但之前也说过 <code>app</code> 目录是最终编译好的版本，并且在建立本地服务器时也使用的这个文件夹，这让我有些糊涂，不知道「发行版」和「编译好的版本」在概念上应该怎样区分。</p>
 <p>并且，教程中说，可以在 <code>app/script</code> 目录中编写 <code>javascript</code> 代码，最终会被编译好后放在 <code>.tmp</code> 和 <code>dist</code> 目录中，我越听越糊涂。</p></div>
 <hr>
-<div class="note default"><p>**一些牢骚：**这个系列教程的优点是精炼，几乎没有什么废话，但也经常产生副作用，就是往往只有 <strong>what</strong>，缺少 <strong>why</strong> 和 <strong>how</strong>，而且缺乏较为系统性、逻辑性的教学结构，导致初学者跟着教程能做出来，但因为并不清楚其中的很多原理，很难举一反三，至少对我来说是这样。</p></div>
+<div class="note default"><p><strong>一些牢骚：</strong> 这个系列教程的优点是精炼，几乎没有什么废话，但也经常产生副作用，就是往往只有 <strong>what</strong>，缺少 <strong>why</strong> 和 <strong>how</strong>，而且缺乏较为系统性、逻辑性的教学结构，导致初学者跟着教程能做出来，但因为并不清楚其中的很多原理，很难举一反三，至少对我来说是这样。</p></div>
 <h3 id="页面交互功能与样式"><a class="markdownIt-Anchor" href="#页面交互功能与样式"></a> 页面交互功能与样式</h3>
 
       
