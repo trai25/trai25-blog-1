@@ -429,10 +429,10 @@
       
         <p>测试一下 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> + <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT</a> 的样式</p>
 <a id="more"></a>
-<h1 id="Header 1"><a class="header-anchor" href="#Header 1" aria-hidden="true">¶</a> Header 1</h1>
-<h2 id="Header 2"><a class="header-anchor" href="#Header 2" aria-hidden="true">¶</a> Header 2</h2>
-<h3 id="Header 3"><a class="header-anchor" href="#Header 3" aria-hidden="true">¶</a> Header 3</h3>
-<h4 id="Header 4"><a class="header-anchor" href="#Header 4" aria-hidden="true">¶</a> Header 4</h4>
+<h1 id="header-1"><a class="markdownIt-Anchor" href="#header-1"></a> Header 1</h1>
+<h2 id="header-2"><a class="markdownIt-Anchor" href="#header-2"></a> Header 2</h2>
+<h3 id="header-3"><a class="markdownIt-Anchor" href="#header-3"></a> Header 3</h3>
+<h4 id="header-4"><a class="markdownIt-Anchor" href="#header-4"></a> Header 4</h4>
 <hr>
 <p><a href="https://blog.trai25.me">Link</a></p>
 <hr>
@@ -476,7 +476,7 @@
 <hr>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 其中 class="blockquote-center" 是必须的 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">blockquote</span> <span class="attr">class</span>=<span class="string">"blockquote-center"</span>&gt;</span>blah blah blah<span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 标签 方式，要求版本在0.4.5或以上 --&gt;</span></span><br><span class="line">&#123;% centerquote %&#125;blah blah blah&#123;% endcenterquote %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 标签别名 --&gt;</span></span><br><span class="line">&#123;% cq %&#125; blah blah blah &#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
 <blockquote class="blockquote-center"><p>May the Force be with you</p>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"></blockquote>
+</blockquote>
 <hr>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 其中 class="full-image" 是必须的 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/image-url"</span> <span class="attr">class</span>=<span class="string">"full-image"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 标签 方式，要求版本在0.4.5或以上 --&gt;</span></span><br><span class="line">&#123;% fullimage /image-url, alt, title %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 别名 --&gt;</span></span><br><span class="line">&#123;% fi /image-url, alt, title %&#125;</span><br></pre></td></tr></table></figure>
 <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/uploads/nathan-anderson-316188-unsplash.jpg" class="full-image" alt="Full Image" title="fi"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
@@ -493,14 +493,11 @@
 <li><code>warning</code></li>
 <li><code>danger</code></li>
 </ul>
-<div class="note default"><p>May the <strong>Force</strong> be with you</p>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"></div>
+<div class="note default"><p>May the <strong>Force</strong> be with you</p></div>
 
-<div class="note primary"><p>May the <strong>Force</strong> be with you</p>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"></div>
-<div class="note cuccess"><p>May the <strong>Force</strong> be with you</p>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"></div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+<div class="note primary"><p>May the <strong>Force</strong> be with you</p></div>
+<div class="note cuccess"><p>May the <strong>Force</strong> be with you</p></div>
+
       
     </div>
 
@@ -782,7 +779,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Header 1"><span class="nav-number">1.</span> <span class="nav-text">¶ Header 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Header 2"><span class="nav-number">1.1.</span> <span class="nav-text">¶ Header 2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Header 3"><span class="nav-number">1.1.1.</span> <span class="nav-text">¶ Header 3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Header 4"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">¶ Header 4</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#header-1"><span class="nav-number">1.</span> <span class="nav-text"> Header 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#header-2"><span class="nav-number">1.1.</span> <span class="nav-text"> Header 2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#header-3"><span class="nav-number">1.1.1.</span> <span class="nav-text"> Header 3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#header-4"><span class="nav-number">1.1.1.1.</span> <span class="nav-text"> Header 4</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
