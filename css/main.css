@@ -1897,7 +1897,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9f5ccb;
+  background: #a2ff8f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2689,8 +2689,8 @@ pre {
 .site-title {
   display: inline-block;
   vertical-align: top;
-  line-height: 36px;
-  font-size: 128px;
+  line-height: 0px;
+  font-size: 104px;
   font-weight: bolder;
   font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
 }
