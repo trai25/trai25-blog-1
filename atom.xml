@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://alt.trai25.me/"/>
-  <updated>2018-04-13T09:50:18.097Z</updated>
+  <updated>2018-04-13T09:51:52.433Z</updated>
   <id>https://alt.trai25.me/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://alt.trai25.me/2018/04/13/ninghao-web-03-navigation/"/>
     <id>https://alt.trai25.me/2018/04/13/ninghao-web-03-navigation/</id>
     <published>2018-04-13T09:08:51.000Z</published>
-    <updated>2018-04-13T09:50:18.097Z</updated>
+    <updated>2018-04-13T09:51:52.433Z</updated>
     
     <content type="html"><![CDATA[<div class="note info"><ul><li>跳过了「网站」系列教程第二章《线框图》，直接进入第三章《导航设计》。</li><li>由于我会跳过其中关于设计的部分，所以笔记标题也会去掉「设计」，改为《导航》。</li></ul></div><p>相关笔记：<a href="/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/%E7%BD%91%E7%AB%99/">学习笔记 | 网站</a></p>]]></content>
     
@@ -38,6 +38,20 @@
     
     </summary>
     
+      <category term="Notes" scheme="https://alt.trai25.me/categories/Notes/"/>
+    
+      <category term="宁皓网" scheme="https://alt.trai25.me/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/"/>
+    
+      <category term="网站" scheme="https://alt.trai25.me/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/%E7%BD%91%E7%AB%99/"/>
+    
+    
+      <category term="笔记" scheme="https://alt.trai25.me/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="开发" scheme="https://alt.trai25.me/tags/%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="网站" scheme="https://alt.trai25.me/tags/%E7%BD%91%E7%AB%99/"/>
+    
+      <category term="宁皓网" scheme="https://alt.trai25.me/tags/%E5%AE%81%E7%9A%93%E7%BD%91/"/>
     
   </entry>
   
