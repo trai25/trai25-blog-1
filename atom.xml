@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://blog.trai25.me/"/>
+  <link href="https://alt.trai25.me/"/>
   <updated>2018-04-12T08:01:14.657Z</updated>
-  <id>https://blog.trai25.me/</id>
+  <id>https://alt.trai25.me/</id>
   
   <author>
     <name>trai25</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>格式塔原理 | Gestalt Principles Thread via Pablo Stanley</title>
-    <link href="https://blog.trai25.me/2018/04/12/Gestalt-Principles-Thread-via-Pablo-Stanley/"/>
-    <id>https://blog.trai25.me/2018/04/12/Gestalt-Principles-Thread-via-Pablo-Stanley/</id>
+    <link href="https://alt.trai25.me/2018/04/12/Gestalt-Principles-Thread-via-Pablo-Stanley/"/>
+    <id>https://alt.trai25.me/2018/04/12/Gestalt-Principles-Thread-via-Pablo-Stanley/</id>
     <published>2018-04-12T07:52:26.000Z</published>
     <updated>2018-04-12T08:01:14.657Z</updated>
     
@@ -31,23 +31,23 @@
     
     </summary>
     
-      <category term="UIUX" scheme="https://blog.trai25.me/categories/UIUX/"/>
+      <category term="UIUX" scheme="https://alt.trai25.me/categories/UIUX/"/>
     
     
-      <category term="UIUX" scheme="https://blog.trai25.me/tags/UIUX/"/>
+      <category term="UIUX" scheme="https://alt.trai25.me/tags/UIUX/"/>
     
-      <category term="格式塔" scheme="https://blog.trai25.me/tags/%E6%A0%BC%E5%BC%8F%E5%A1%94/"/>
+      <category term="格式塔" scheme="https://alt.trai25.me/tags/%E6%A0%BC%E5%BC%8F%E5%A1%94/"/>
     
-      <category term="Pablo Stanley" scheme="https://blog.trai25.me/tags/Pablo-Stanley/"/>
+      <category term="Pablo Stanley" scheme="https://alt.trai25.me/tags/Pablo-Stanley/"/>
     
-      <category term="Twitter" scheme="https://blog.trai25.me/tags/Twitter/"/>
+      <category term="Twitter" scheme="https://alt.trai25.me/tags/Twitter/"/>
     
   </entry>
   
   <entry>
     <title>学习笔记 | 网站 01 - 工作流</title>
-    <link href="https://blog.trai25.me/2018/04/10/ninghao-web-01-workflow/"/>
-    <id>https://blog.trai25.me/2018/04/10/ninghao-web-01-workflow/</id>
+    <link href="https://alt.trai25.me/2018/04/10/ninghao-web-01-workflow/"/>
+    <id>https://alt.trai25.me/2018/04/10/ninghao-web-01-workflow/</id>
     <published>2018-04-10T11:13:41.000Z</published>
     <updated>2018-04-13T07:15:30.982Z</updated>
     
@@ -59,63 +59,63 @@
     
     </summary>
     
-      <category term="Notes" scheme="https://blog.trai25.me/categories/Notes/"/>
+      <category term="Notes" scheme="https://alt.trai25.me/categories/Notes/"/>
     
-      <category term="宁皓网" scheme="https://blog.trai25.me/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/"/>
+      <category term="宁皓网" scheme="https://alt.trai25.me/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/"/>
     
-      <category term="网站" scheme="https://blog.trai25.me/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/%E7%BD%91%E7%AB%99/"/>
+      <category term="网站" scheme="https://alt.trai25.me/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/%E7%BD%91%E7%AB%99/"/>
     
     
-      <category term="笔记" scheme="https://blog.trai25.me/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://alt.trai25.me/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="开发" scheme="https://blog.trai25.me/tags/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="https://alt.trai25.me/tags/%E5%BC%80%E5%8F%91/"/>
     
-      <category term="网站" scheme="https://blog.trai25.me/tags/%E7%BD%91%E7%AB%99/"/>
+      <category term="网站" scheme="https://alt.trai25.me/tags/%E7%BD%91%E7%AB%99/"/>
     
-      <category term="宁皓网" scheme="https://blog.trai25.me/tags/%E5%AE%81%E7%9A%93%E7%BD%91/"/>
+      <category term="宁皓网" scheme="https://alt.trai25.me/tags/%E5%AE%81%E7%9A%93%E7%BD%91/"/>
     
   </entry>
   
   <entry>
     <title>学习笔记 | 网站 00 - 开始</title>
-    <link href="https://blog.trai25.me/2018/04/10/ninghao-web-00-introduction/"/>
-    <id>https://blog.trai25.me/2018/04/10/ninghao-web-00-introduction/</id>
+    <link href="https://alt.trai25.me/2018/04/10/ninghao-web-00-introduction/"/>
+    <id>https://alt.trai25.me/2018/04/10/ninghao-web-00-introduction/</id>
     <published>2018-04-10T09:32:31.000Z</published>
-    <updated>2018-04-13T05:59:25.315Z</updated>
+    <updated>2018-04-13T07:36:21.523Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>我是一个记性很差的人，却热爱学习新知识，这两个属性的组合基本就是个悲剧。<br><cite><a href="https://blog.trai25.me">trai25</a></cite></p></blockquote><p>最近开始在 <a href="https://ninghao.net/" target="_blank" rel="noopener">宁皓网</a> 学习一些网站开发的入门知识，我想把这个过程记录下来。</p><a id="more"></a><div class="note warning"><p><strong>注意：</strong> 本文并不是对外写的教程，只是为了方便我自己回顾学习过程而已，完全是基于宁皓网视频教程的记录，如果你没有看过这套教程，我的这些笔记很可能对你没什么意义。出于想避免以后回过头来自己都看不懂的动机（前面说了，我记性很差，我怕再回过头来看的时候前面学的都忘得差不多了），所以想尽量把这些内容写得别人（当然是也看过视频教程的）也看得懂，这样才能保证当我失忆以后也能看懂。</p></div>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>我是一个记性很差的人，却热爱学习新知识，这两个属性的组合基本就是个悲剧。<br><cite><a href="https://blog.trai25.me" target="_blank" rel="noopener">trai25</a></cite></p></blockquote><p>最近开始在 <a href="https://ninghao.net/" target="_blank" rel="noopener">宁皓网</a> 学习一些网站开发的入门知识，我想把这个过程记录下来。</p><a id="more"></a><div class="note warning"><p><strong>注意：</strong> 本笔记并不是对外写的教程，只是为了方便我自己学习和回顾而已，完全是基于宁皓网视频教程的记录，如果你没有看过这套教程，我的这些笔记很可能对你没什么意义。出于想避免以后回过头来自己都看不懂的动机（前面说了，我记性很差，我怕再回过头来看的时候前面学的都忘得差不多了），所以想尽量把这些内容写得别人（当然是也看过视频教程的）也看得懂，这样才能保证当我失忆以后也能看懂。</p></div>]]></content>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;p&gt;我是一个记性很差的人，却热爱学习新知识，这两个属性的组合基本就是个悲剧。&lt;br&gt;
-&lt;cite&gt;&lt;a href=&quot;https://blog.trai25.me&quot;&gt;trai25&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;cite&gt;&lt;a href=&quot;https://blog.trai25.me&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;trai25&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;最近开始在 &lt;a href=&quot;https://ninghao.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;宁皓网&lt;/a&gt; 学习一些网站开发的入门知识，我想把这个过程记录下来。&lt;/p&gt;
     
     </summary>
     
-      <category term="Notes" scheme="https://blog.trai25.me/categories/Notes/"/>
+      <category term="Notes" scheme="https://alt.trai25.me/categories/Notes/"/>
     
-      <category term="宁皓网" scheme="https://blog.trai25.me/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/"/>
+      <category term="宁皓网" scheme="https://alt.trai25.me/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/"/>
     
-      <category term="网站" scheme="https://blog.trai25.me/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/%E7%BD%91%E7%AB%99/"/>
+      <category term="网站" scheme="https://alt.trai25.me/categories/Notes/%E5%AE%81%E7%9A%93%E7%BD%91/%E7%BD%91%E7%AB%99/"/>
     
     
-      <category term="笔记" scheme="https://blog.trai25.me/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://alt.trai25.me/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="开发" scheme="https://blog.trai25.me/tags/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="https://alt.trai25.me/tags/%E5%BC%80%E5%8F%91/"/>
     
-      <category term="网站" scheme="https://blog.trai25.me/tags/%E7%BD%91%E7%AB%99/"/>
+      <category term="网站" scheme="https://alt.trai25.me/tags/%E7%BD%91%E7%AB%99/"/>
     
-      <category term="宁皓网" scheme="https://blog.trai25.me/tags/%E5%AE%81%E7%9A%93%E7%BD%91/"/>
+      <category term="宁皓网" scheme="https://alt.trai25.me/tags/%E5%AE%81%E7%9A%93%E7%BD%91/"/>
     
   </entry>
   
   <entry>
     <title>一部关于 Dieter Rams 的纪录片</title>
-    <link href="https://blog.trai25.me/2018/04/02/documentary-rams/"/>
-    <id>https://blog.trai25.me/2018/04/02/documentary-rams/</id>
+    <link href="https://alt.trai25.me/2018/04/02/documentary-rams/"/>
+    <id>https://alt.trai25.me/2018/04/02/documentary-rams/</id>
     <published>2018-04-01T17:20:11.000Z</published>
     <updated>2018-04-11T07:54:58.250Z</updated>
     
@@ -128,21 +128,21 @@
     
     </summary>
     
-      <category term="Media" scheme="https://blog.trai25.me/categories/Media/"/>
+      <category term="Media" scheme="https://alt.trai25.me/categories/Media/"/>
     
     
-      <category term="Dieter Rams" scheme="https://blog.trai25.me/tags/Dieter-Rams/"/>
+      <category term="Dieter Rams" scheme="https://alt.trai25.me/tags/Dieter-Rams/"/>
     
-      <category term="纪录片" scheme="https://blog.trai25.me/tags/%E7%BA%AA%E5%BD%95%E7%89%87/"/>
+      <category term="纪录片" scheme="https://alt.trai25.me/tags/%E7%BA%AA%E5%BD%95%E7%89%87/"/>
     
-      <category term="电影" scheme="https://blog.trai25.me/tags/%E7%94%B5%E5%BD%B1/"/>
+      <category term="电影" scheme="https://alt.trai25.me/tags/%E7%94%B5%E5%BD%B1/"/>
     
   </entry>
   
   <entry>
     <title>Git飞行规则 (Flight Rules)</title>
-    <link href="https://blog.trai25.me/2018/03/30/flight-rules-for-git/"/>
-    <id>https://blog.trai25.me/2018/03/30/flight-rules-for-git/</id>
+    <link href="https://alt.trai25.me/2018/03/30/flight-rules-for-git/"/>
+    <id>https://alt.trai25.me/2018/03/30/flight-rules-for-git/</id>
     <published>2018-03-30T09:01:01.000Z</published>
     <updated>2018-03-31T08:04:33.850Z</updated>
     
@@ -164,23 +164,23 @@
     
     </summary>
     
-      <category term="Coding" scheme="https://blog.trai25.me/categories/Coding/"/>
+      <category term="Coding" scheme="https://alt.trai25.me/categories/Coding/"/>
     
     
-      <category term="Git" scheme="https://blog.trai25.me/tags/Git/"/>
+      <category term="Git" scheme="https://alt.trai25.me/tags/Git/"/>
     
-      <category term="guide" scheme="https://blog.trai25.me/tags/guide/"/>
+      <category term="guide" scheme="https://alt.trai25.me/tags/guide/"/>
     
   </entry>
   
   <entry>
     <title>The styles of NexT theme</title>
-    <link href="https://blog.trai25.me/2018/03/30/next-theme-styles/"/>
-    <id>https://blog.trai25.me/2018/03/30/next-theme-styles/</id>
+    <link href="https://alt.trai25.me/2018/03/30/next-theme-styles/"/>
+    <id>https://alt.trai25.me/2018/03/30/next-theme-styles/</id>
     <published>2018-03-30T06:25:18.000Z</published>
     <updated>2018-04-11T16:06:28.224Z</updated>
     
-    <content type="html"><![CDATA[<p>测试一下 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> + <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT</a> 的样式</p><a id="more"></a><h1 id="header-1"><a class="markdownIt-Anchor" href="#header-1"></a> Header 1</h1><h2 id="header-2"><a class="markdownIt-Anchor" href="#header-2"></a> Header 2</h2><h3 id="header-3"><a class="markdownIt-Anchor" href="#header-3"></a> Header 3</h3><h4 id="header-4"><a class="markdownIt-Anchor" href="#header-4"></a> Header 4</h4><hr><p><a href="https://blog.trai25.me">Link</a></p><hr><ul><li>List Item</li><li>List Item</li><li>List Item</li></ul><ol><li>List Item</li><li>List Item</li><li>List Item</li></ol><hr><table><thead><tr><th>标题栏</th><th>标题栏</th><th style="text-align:left">标题栏</th></tr></thead><tbody><tr><td>内容</td><td>内容</td><td style="text-align:left">内容</td></tr><tr><td>内容</td><td>内容</td><td style="text-align:left">内容</td></tr><tr><td>内容</td><td>内容</td><td style="text-align:left">内容</td></tr></tbody></table><hr><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 其中 class="blockquote-center" 是必须的 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">blockquote</span> <span class="attr">class</span>=<span class="string">"blockquote-center"</span>&gt;</span>blah blah blah<span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 标签 方式，要求版本在0.4.5或以上 --&gt;</span></span><br><span class="line">&#123;% centerquote %&#125;blah blah blah&#123;% endcenterquote %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 标签别名 --&gt;</span></span><br><span class="line">&#123;% cq %&#125; blah blah blah &#123;% endcq %&#125;</span><br></pre></td></tr></table></figure><blockquote class="blockquote-center"><p>May the Force be with you</p></blockquote><hr><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 其中 class="full-image" 是必须的 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/image-url"</span> <span class="attr">class</span>=<span class="string">"full-image"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 标签 方式，要求版本在0.4.5或以上 --&gt;</span></span><br><span class="line">&#123;% fullimage /image-url, alt, title %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 别名 --&gt;</span></span><br><span class="line">&#123;% fi /image-url, alt, title %&#125;</span><br></pre></td></tr></table></figure><span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/uploads/nathan-anderson-316188-unsplash.jpg" class="full-image" alt="Full Image" title="fi"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><hr><p><img src="/uploads/nathan-anderson-316188-unsplash.jpg" alt="Normal Image"></p><hr><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>class_name %&#125; Content (md partial supported) &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure><p>其中 <code>class_name</code> 可以是一下列表中的一个值：</p><ul><li><code>default</code></li><li><code>primary</code></li><li><code>success</code></li><li><code>info</code></li><li><code>warning</code></li><li><code>danger</code></li></ul><div class="note default"><p>May the <strong>Force</strong> be with you</p></div><div class="note primary"><p>May the <strong>Force</strong> be with you</p></div><div class="note cuccess"><p>May the <strong>Force</strong> be with you</p></div>]]></content>
+    <content type="html"><![CDATA[<p>测试一下 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> + <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT</a> 的样式</p><a id="more"></a><h1 id="header-1"><a class="markdownIt-Anchor" href="#header-1"></a> Header 1</h1><h2 id="header-2"><a class="markdownIt-Anchor" href="#header-2"></a> Header 2</h2><h3 id="header-3"><a class="markdownIt-Anchor" href="#header-3"></a> Header 3</h3><h4 id="header-4"><a class="markdownIt-Anchor" href="#header-4"></a> Header 4</h4><hr><p><a href="https://blog.trai25.me" target="_blank" rel="noopener">Link</a></p><hr><ul><li>List Item</li><li>List Item</li><li>List Item</li></ul><ol><li>List Item</li><li>List Item</li><li>List Item</li></ol><hr><table><thead><tr><th>标题栏</th><th>标题栏</th><th style="text-align:left">标题栏</th></tr></thead><tbody><tr><td>内容</td><td>内容</td><td style="text-align:left">内容</td></tr><tr><td>内容</td><td>内容</td><td style="text-align:left">内容</td></tr><tr><td>内容</td><td>内容</td><td style="text-align:left">内容</td></tr></tbody></table><hr><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 其中 class="blockquote-center" 是必须的 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">blockquote</span> <span class="attr">class</span>=<span class="string">"blockquote-center"</span>&gt;</span>blah blah blah<span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 标签 方式，要求版本在0.4.5或以上 --&gt;</span></span><br><span class="line">&#123;% centerquote %&#125;blah blah blah&#123;% endcenterquote %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 标签别名 --&gt;</span></span><br><span class="line">&#123;% cq %&#125; blah blah blah &#123;% endcq %&#125;</span><br></pre></td></tr></table></figure><blockquote class="blockquote-center"><p>May the Force be with you</p></blockquote><hr><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 其中 class="full-image" 是必须的 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/image-url"</span> <span class="attr">class</span>=<span class="string">"full-image"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 标签 方式，要求版本在0.4.5或以上 --&gt;</span></span><br><span class="line">&#123;% fullimage /image-url, alt, title %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 别名 --&gt;</span></span><br><span class="line">&#123;% fi /image-url, alt, title %&#125;</span><br></pre></td></tr></table></figure><span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/uploads/nathan-anderson-316188-unsplash.jpg" class="full-image" alt="Full Image" title="fi"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><hr><p><img src="/uploads/nathan-anderson-316188-unsplash.jpg" alt="Normal Image"></p><hr><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>class_name %&#125; Content (md partial supported) &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure><p>其中 <code>class_name</code> 可以是一下列表中的一个值：</p><ul><li><code>default</code></li><li><code>primary</code></li><li><code>success</code></li><li><code>info</code></li><li><code>warning</code></li><li><code>danger</code></li></ul><div class="note default"><p>May the <strong>Force</strong> be with you</p></div><div class="note primary"><p>May the <strong>Force</strong> be with you</p></div><div class="note cuccess"><p>May the <strong>Force</strong> be with you</p></div>]]></content>
     
     <summary type="html">
     
@@ -189,20 +189,20 @@
     </summary>
     
     
-      <category term="style" scheme="https://blog.trai25.me/tags/style/"/>
+      <category term="style" scheme="https://alt.trai25.me/tags/style/"/>
     
-      <category term="testing" scheme="https://blog.trai25.me/tags/testing/"/>
+      <category term="testing" scheme="https://alt.trai25.me/tags/testing/"/>
     
-      <category term="hexo" scheme="https://blog.trai25.me/tags/hexo/"/>
+      <category term="hexo" scheme="https://alt.trai25.me/tags/hexo/"/>
     
-      <category term="NexT-theme" scheme="https://blog.trai25.me/tags/NexT-theme/"/>
+      <category term="NexT-theme" scheme="https://alt.trai25.me/tags/NexT-theme/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://blog.trai25.me/2018/03/29/hello-world/"/>
-    <id>https://blog.trai25.me/2018/03/29/hello-world/</id>
+    <link href="https://alt.trai25.me/2018/03/29/hello-world/"/>
+    <id>https://alt.trai25.me/2018/03/29/hello-world/</id>
     <published>2018-03-28T18:16:11.897Z</published>
     <updated>2018-03-30T06:02:01.517Z</updated>
     

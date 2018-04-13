@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: "PingFang SC", "Microsoft YaHei", sans-serif, 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 h1,
@@ -1290,7 +1290,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1897,7 +1897,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a15dda;
+  background: #b16e94;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2547,7 +2547,7 @@ ul.breadcrumb {
   margin: 1em 0;
   padding: 0 2em;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 ul.breadcrumb li {
   display: inline;
@@ -2691,8 +2691,32 @@ pre {
   vertical-align: top;
   line-height: 104px;
   font-size: 104px;
-  font-weight: bolder;
+  font-weight: 700;
   font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.post-title {
+  text-align: center;
+  word-break: break-word;
+  font-weight: 400;
+}
+body {
+  position: relative;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif, 300;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2;
+  color: #555;
+  background: #fff;
+}
+b,
+strong {
+  font-weight: 500;
+}
+blockquote {
+  padding: 0 15px;
+  color: #666;
+  font-weight: 400;
+  border-left: 4px solid #555;
 }
 .btn {
   display: inline-block;
