@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="alt.">
 <meta property="og:description" content="因为「网站」系列教程第二章《线框图》是设计相关的内容，我就直接跳过，进入第三章《导航设计》。 由于我会跳过其中关于设计的部分，所以笔记标题也会去掉「设计」，改为《导航》。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-18T09:49:28.436Z">
+<meta property="og:updated_time" content="2018-04-18T10:28:00.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记 | 网站 03 - 导航">
 <meta name="twitter:description" content="因为「网站」系列教程第二章《线框图》是设计相关的内容，我就直接跳过，进入第三章《导航设计》。 由于我会跳过其中关于设计的部分，所以笔记标题也会去掉「设计」，改为《导航》。">
@@ -480,8 +480,14 @@
 <h4 id="231-mainscss"><a class="markdownIt-Anchor" href="#231-mainscss"></a> 2.3.1 main.scss</h4>
 <p>首先，将 <code>app/styles</code> 目录下的 <code>main.css</code> 重命名为 <code>main.scss</code>，当项目编译的时候会自动将该 <code>Sass</code> 文件编译成普通的 <code>main.css</code> 文件，存放到 <code>.tmp/styles</code> 和 <code>dist/styles</code> 目录中。</p>
 <p><code>Sass</code> 可以使用 <code>$</code> 来定义变量，可以直接在 <code>main.scss</code> 中使用这些变量。比如在 <code>main.scss</code> 中添加如下代码：</p>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义变量的值</span></span><br><span class="line"><span class="variable">$page-background</span>: <span class="number">#ff0000</span>; </span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用变量</span></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="variable">$page-background</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>保存修改后，页面的背景色将会变成红色 <code>#ff0000</code>。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义变量的值</span></span><br><span class="line"><span class="variable">$page-background</span>: <span class="number">#246346</span>; </span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用变量</span></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="variable">$page-background</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>保存修改后，页面的背景色将会变成 <code>#246346</code>。编译后的 <code>main.css</code> 会存放到 <code>.tmp/styles</code> 和 <code>dist/styles</code> 目录中，内容如下：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;<span class="attribute">background</span>:<span class="number">#246346</span>&#125;</span><br><span class="line"><span class="comment">/*# sourceMappingURL=main.css.map */</span></span><br></pre></td></tr></table></figure>
+<p>但如果把所有样式和变量等内容全都直接写进 <code>main.scss</code>，文件就会变得过于复杂，不方便管理和修改，所以更好的办法是把这些内容作为 <code>Partial</code>（可以理解为模块）放到多个不同的 <code>.scss</code> 文件中，然后再用 <code>main.scss</code> 调用这些模块。</p>
+<div class="note info"><p>可复用属性尽量抽离为页面变量，易于统一维护。<br>
+<cite>[<a href="http://aotu.io" target="_blank" rel="noopener">aotu.io</a> 前端代码规范][1]</cite></p></div>
+<h4 id="232-partial-模块"><a class="markdownIt-Anchor" href="#232-partial-模块"></a> 2.3.2 Partial 模块</h4>
+<p><code>Partial</code> 是以 <code>_</code> 作为文件名开头的 <code>.scss</code> 文件。这种文件不会被单独进行编译，</p>
 <h2 id="3-样式"><a class="markdownIt-Anchor" href="#3-样式"></a> 3 样式</h2>
 <h3 id="31-组织样式的方法"><a class="markdownIt-Anchor" href="#31-组织样式的方法"></a> 3.1 组织样式的方法</h3>
 <h3 id="32-代码导航的代码结构"><a class="markdownIt-Anchor" href="#32-代码导航的代码结构"></a> 3.2 代码：导航的代码结构</h3>
@@ -755,7 +761,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-准备"><span class="nav-text"> 1 准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-sass"><span class="nav-text"> 2 Sass</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-创建页面的准备"><span class="nav-text"> 2.1 创建页面的准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-增强型-csssass-与-less"><span class="nav-text"> 2.2 增强型 CSS：Sass 与 Less</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-在项目里使用-sass"><span class="nav-text"> 2.3 在项目里使用 Sass</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#231-mainscss"><span class="nav-text"> 2.3.1 main.scss</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-样式"><span class="nav-text"> 3 样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#31-组织样式的方法"><span class="nav-text"> 3.1 组织样式的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#32-代码导航的代码结构"><span class="nav-text"> 3.2 代码：导航的代码结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#33-样式导航的样式"><span class="nav-text"> 3.3 样式：导航的样式</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-准备"><span class="nav-text"> 1 准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-sass"><span class="nav-text"> 2 Sass</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-创建页面的准备"><span class="nav-text"> 2.1 创建页面的准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-增强型-csssass-与-less"><span class="nav-text"> 2.2 增强型 CSS：Sass 与 Less</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-在项目里使用-sass"><span class="nav-text"> 2.3 在项目里使用 Sass</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#231-mainscss"><span class="nav-text"> 2.3.1 main.scss</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#232-partial-模块"><span class="nav-text"> 2.3.2 Partial 模块</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-样式"><span class="nav-text"> 3 样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#31-组织样式的方法"><span class="nav-text"> 3.1 组织样式的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#32-代码导航的代码结构"><span class="nav-text"> 3.2 代码：导航的代码结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#33-样式导航的样式"><span class="nav-text"> 3.3 样式：导航的样式</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -799,7 +805,7 @@
 </span>
 </div>
   <span class="post-meta-divider">|</span>
-  <span class="post-count">写了 11.2k 字</span>
+  <span class="post-count">写了 11.4k 字</span>
 <!--字数统计 & 字数统计 展示 结束-->
 </div>
 
