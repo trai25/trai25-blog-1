@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="alt.">
 <meta property="og:description" content="因为「网站」系列教程第二章《线框图》是设计相关的内容，我就直接跳过，进入第三章《导航设计》。 由于我会跳过其中关于设计的部分，所以笔记标题也会去掉「设计」，改为《导航》。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-23T09:13:20.557Z">
+<meta property="og:updated_time" content="2018-04-23T09:17:37.091Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记 | 网站 03 - 导航">
 <meta name="twitter:description" content="因为「网站」系列教程第二章《线框图》是设计相关的内容，我就直接跳过，进入第三章《导航设计》。 由于我会跳过其中关于设计的部分，所以笔记标题也会去掉「设计」，改为《导航》。">
@@ -484,8 +484,10 @@
 <p>保存修改后，页面的背景色将会变成 <code>#246346</code>。编译后的 <code>main.css</code> 会存放到 <code>.tmp/styles</code> 和 <code>dist/styles</code> 目录中，内容如下：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;<span class="attribute">background</span>:<span class="number">#246346</span>&#125;</span><br><span class="line"><span class="comment">/*# sourceMappingURL=main.css.map */</span></span><br></pre></td></tr></table></figure>
 <p>但如果把所有样式和变量等内容全都直接写进 <code>main.scss</code>，文件就会变得过于复杂，不方便管理和修改，所以更好的办法是把这些内容作为 <code>Partial</code>（可以理解为模块）放到多个不同的 <code>.scss</code> 文件中，然后再用 <code>main.scss</code> 调用这些模块。</p>
-<div class="note info"><p>可复用属性尽量抽离为页面变量，易于统一维护。<br>
-<cite>[<a href="http://aotu.io" target="_blank" rel="noopener">aotu.io</a> 前端代码规范][1]</cite></p></div>
+<blockquote>
+<p>可复用属性尽量抽离为页面变量，易于统一维护。<br>
+<cite><a href="https://guide.aotu.io/docs/css/sass.html#%E5%8F%98%E9%87%8F" target="_blank" rel="noopener">aotu.io 前端代码规范</a></cite></p>
+</blockquote>
 <h4 id="232-partial-模块"><a class="markdownIt-Anchor" href="#232-partial-模块"></a> 2.3.2 Partial 模块</h4>
 <div class="note info"><p><code>Partial</code> 是以 <code>_</code> 作为文件名开头的 <code>.scss</code> 文件。可以将这类文件想象成「模块」，这种文件不会被单独编译，需要通过 <code>@import</code> 将其作为一个模块导入到其它 <code>.scss</code> 文件中使用。 用 Partial 模块来组织</p></div>
 <p><strong>将页面背景颜色等基础样式拆分到 Partial 文件 _base.scss 中：</strong></p>
