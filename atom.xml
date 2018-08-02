@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://alt.trai25.me/"/>
-  <updated>2018-08-02T17:39:00.204Z</updated>
+  <updated>2018-08-02T17:42:32.788Z</updated>
   <id>https://alt.trai25.me/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>设计系统可定制的程度</title>
+    <title>在 Sketch 中使用 override 应适可而止</title>
     <link href="https://alt.trai25.me/2018/08/03/override-should-be-deprecated-in-sketch/"/>
     <id>https://alt.trai25.me/2018/08/03/override-should-be-deprecated-in-sketch/</id>
     <published>2018-08-02T16:31:10.000Z</published>
-    <updated>2018-08-02T17:39:00.204Z</updated>
+    <updated>2018-08-02T17:42:32.788Z</updated>
     
     <content type="html"><![CDATA[<p>近来家里的事挺忙，alt.DS 项目进度比较慢。之前的设计和制作过程中遇到了很多问题，导致反复修改了很长时间，甚至经历了三次彻底重做。</p><p>现在看来其实最主要的原因还是我自己对设计体系这件事有许多误解，今天先来说一说其中一点，也是我目前正在调整的部分 ── Symbol Override 的使用边界。</p><a id="more"></a><p>简单来说，在 Sketch 里用 override 一定要适可而止。如果在这一点上缺乏克制，当设计体系用于实际项目中时就会出现很严重的问题：大量的 组件/控件 都需要经过小心设置才能实现需要的样式和状态，对设计师来说，这必然增加大量不必要的操作，同时也大大增加了失误的可能性。当文件需要输出到其它工具时可能也会遇到问题，比如无法识别 override 的部分内容。</p><p><img src="/uploads/altds-20180803-1.png" alt="altds-20180803"></p><p>我建议的做法是，尽量只把 override 用于文本、icon 等具体内容，而组件的样式类型、背景和边框颜色、交互状态等等都尽可能直接锁死，这些区别都应该做成多个 symbol，而不是企图用一个 all in one的 symbol 通过 override 变化出各种样式和状态。</p><p>all in one 用来练手可以，但用在具体项目中应该谨慎一些。</p>]]></content>
     
